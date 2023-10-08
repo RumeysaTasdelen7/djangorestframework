@@ -1,0 +1,10 @@
+<h1>Tüm Kitaplar</h1>
+
+{% for book in books %}
+    <ul>
+        <li>Başlık: {{book.title}}</li><br>
+        <li>Alt Başlık: {{book.subtitle}} </li><br>
+        <li>Author: {{book.author}} </li><br>
+        <li>ISBN: {{book.isbn}} </li><br>
+    </ul>
+{% endfor %}
